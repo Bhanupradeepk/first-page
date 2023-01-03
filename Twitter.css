@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+}
+.main{
+    width: 75%;
+    height: 80vh;
+    background-color: bisque;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
+    position: relative;
+}
+.left{
+    width: 60%;
+    height:70vh;
+}
+img{
+    background-size: cover;
+    width: 95%;
+    height: 80vh;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 10%;
+}
+p{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 7%;
+}
+.sub1{
+    width: 80%;
+    height: 5vh;
+    padding-left: 55px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 50px;
+    margin-top: 2%;
+    padding-left: 75px;
+    border-radius: 30px;
+}
+.sub2{
+    width: 80%;
+    height: 5vh;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 2%;
+    padding-left: 75px;
+    border-radius: 30px;
+}
+.sub3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+.sub4{
+    width: 80%;
+    height: 5vh;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    margin-top: 7%;
+    padding-left: 25px;
+    border-radius: 30px;
+    background-color: dodgerblue;
+}
+.sub5{
+    margin-top: 2%;
+    font-size: small;
+}
+.sub6{
+    width: 80%;
+    height: 5vh;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    margin-top: 5%;
+    padding-left: 110px;
+    border-radius: 30px;
+    color: dodgerblue;
+}
+.sub7{
+    margin-top: 13%;
+}
+.x{
+    font-size: 120px;
+    color: deepskyblue;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: smaller;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 75%;
+    height: 2vh;
+}
+hr{
+    margin-top: 6%;
+    margin-right: 2%;
+}
+span{
+    color: blue;
+}

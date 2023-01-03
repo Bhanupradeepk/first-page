@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0px;
+            }
+            body{
+                background-color: aqua;
+            }
+            nav{
+                display:flex;
+                justify-content: space-around;
+            }
+            .r{
+                padding-left: 7%;
+                margin-top: 5%;
+                height: 5vh;
+                font-size: 15px;
+                font-weight: 600;
+                color: brown;
+                position: relative;
+
+            }
+            .r:hover{
+                font-size: 20px;
+                color: yellow;
+                text-shadow: 3px 3px  green;
+            }
+            .menu{
+                width: 100px;
+                height: 100px;
+                background-color: chartreuse;
+                flex-direction: column;
+                position: relative;
+                display: none;
+                z-index: 4;
+            }   
+            .r:hover .menu{
+                display: block;
+            }
+       
+        </style>
+    </head>
+    <body>
+        <nav>
+          <div class="r"><a href="#">Login</a>
+          <div class="menu">
+            <div><a href="#">Email</a></div>
+            <div><a href="#">Google</a></div>
+            <div><a href="#">fb</a></div>
+            <div><a href="#">github</a></div>
+          </div>
+        </div>
+          <div class="r">submit</div>
+          <div class="r">contact</div>
+          <div class="r">Register</div>
+        </nav>
+    </body>
+</html>
