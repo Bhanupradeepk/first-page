@@ -1,0 +1,529 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin: 0px;
+            }
+            .main{
+                width: 100%;
+                height: 10vh;
+                background-color: blueviolet;
+            }
+            nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                justify-items: center;
+            }
+            .x{
+                background-color: blue;
+                width: 35px;
+                height: 35px;
+                font-size: 20px;
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+            .sub1{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                position: relative;
+                right: 75px;
+            }
+            .sub1 i{
+                position: relative;
+                left: 40px;
+                top: 8px;
+
+            }
+            .sub1 input{
+                border-radius: 10px;
+                padding-left: 15%;
+                width: 70%;
+                height: 5vh;
+                font-size: small;
+            }
+            .sub2{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                position: relative;
+                right: 75px;
+            }
+            .sub2 i{
+                position: relative;
+                right: 15%;
+            }
+            .sub2 img{
+                width: 25px;
+                height: 25px;
+                color: black;
+            }
+            .sub3 img{
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                position: relative;
+                left: 5%;
+                top: 10%;
+            }
+            
+            .main2{
+                position: relative;
+                top: 10px;
+                left: 20px;
+            }
+            .r1 img{
+                width: 25%;
+                height: 20vh;
+            }
+            .rimg img{
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 75px;
+                left: 100px;
+            }
+            .r11{
+                position: relative;
+                top: 50px;
+                left: 10px;
+            }
+            .r12{
+                position: relative;
+                top: 55px;
+                left: 10px;
+                color: orangered;
+            }
+            hr{
+                width: 25%;
+                position: relative;
+                top: 90px;
+            }
+            .bb{
+                position: relative;
+                top: 75px;
+                left: 10px;
+            }
+            span{
+                position: relative;
+                right: 70%;
+            }
+            .main3{
+                width: 25%;
+                height: 20%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+            }
+            .m31{
+                position: relative;
+                top: 100px;
+                left: 8px;
+            }
+            .vr{
+                border: 1px solid gray; 
+                height: 80px;
+                position: relative;
+                top: 88px;
+
+            }
+            .m32{
+                position: relative;
+                top: 120px;
+                left: 7px;
+            }
+            .m33{
+                position: relative;
+                top: 110px;
+                left: 8px;
+            }
+            .m34{
+                position: relative;
+                top: 120px;
+                left: 6px;
+            }
+            .main4{
+                width: 25%;
+                height: 110vh;
+                position: relative;
+                top: 45px;
+                left: 10px;
+                background-color: grey;
+            }
+            .main4 h3{
+                position: relative;
+                font-size: medium;
+                top: 15px;
+                left: 15px;
+            }
+            .m41 img{
+                width: 22px;
+                height: 22px;
+                position: relative;
+                left: 5%;
+                top:20px;
+            }
+
+            .m41 span{
+                position: relative;
+                line-height: 10px;
+                left: 14%;
+                top: 5px;
+            }
+            .main4 hr{
+                width: 100%;
+                position: relative;
+                top: 10%;
+
+            }
+            .m42{
+                display: flex;
+                align-items: center;
+                position: relative;
+                top: 12%;
+                left: 30%;
+            }
+            .main5{
+                background-color: grey;
+                width: 45%;
+                height: 19vh;
+                position: absolute;
+                bottom: 68.5%;
+                left: 28%;
+            }
+            .m51{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+            }
+            .m51 img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                position: relative;
+                top: 10px;
+                left:-70px;
+            }
+            .m51 p{
+                position: relative;
+                top: 30px;
+                left:-270px;
+            }
+        
+            .m52 hr{
+                width: 100%;
+                position: relative;
+                top: 20px;
+                left: 20px;
+            }
+            .main6{
+                width: 25%;
+                height: 60vh;
+                position: absolute;
+                background-color: grey;
+                top: 11.5%;
+                left: 75%;
+            }
+            .sub6{
+               position: relative; 
+               top: 5%;
+               left: 5%;
+            }
+            .sub6 div{
+                font-size: 30px;
+            }
+            .sub6 span{
+                position: absolute;
+                left: 65%;
+                bottom: 4%;
+            }
+            .sub62{
+                position: relative; 
+               top: 9%;
+               left: 5%;
+            }
+            .sub63{
+                position: relative; 
+               top: 11%;
+               left: 5%;
+            }
+            .sub64{
+                position: relative; 
+               top: 14%;
+               left: 5%;
+            }
+            .sub65{
+                position: relative; 
+               top: 17%;
+               left: 5%;
+            }
+            .sub66{
+                position: relative; 
+               top: 22%;
+               left: 5%;
+            }
+            .sub67{
+                position: relative; 
+               top: 25%;
+               left: 5%;
+               color: blue;
+            }
+            .main7{
+                width: 25%;
+                height: 65vh;
+                position: absolute;
+                border-top: 5px solid ;
+                background-color: gray;
+                top: 65%;
+                left: 75%;
+            }
+            .sub71{
+                position: relative; 
+               top: 2%;
+               left: 45%;
+            }
+            .sub72{
+                position: relative; 
+               top: 7%;
+               left: 8%;
+            }
+            .sub73 img{
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                left: 20%;
+                top: 22%;
+            }
+            .sub74 img{
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                left: 55%;
+                top: 22%;
+            }
+            .sub75{
+                position: absolute;
+                left: 8%;
+                bottom: 50%;
+
+            }
+            .sub76{
+                position: absolute;
+                left: 2%;
+                bottom: 80%;
+            }
+            .sub7 input{
+                position: absolute;
+                width: 25%;
+                height: 5vh;
+                left: 70%;
+                bottom: 50%;
+                border-radius: 20px;
+                padding-left: 5%;
+                font-size: 15px;
+                border-color: blue;
+                color: blue;
+            }
+            .z{
+                background-color: blue;
+                width: 33px;
+                height: 33px;
+                font-size: 20px;
+                padding-top: 12px;
+                padding-left: 12px;
+                position: absolute;
+                left: 76%;
+                top: 115%;
+
+            }
+            .sub76{
+                position: absolute;
+                left: 78%;
+                top : 105%;
+            }
+            .sub77{
+                position: absolute;
+                left: 78%;
+                top: 110%;
+            }
+            .sub78{
+                position: absolute;
+                left: 80%;
+                top: 117%;
+            }
+            .t20{
+                position: relative;
+                width:100%;
+                left:0px;
+                top:40px;
+            }
+            .t50{
+                /* position: relative; */
+                display: flex;
+                justify-content:space-between;
+                margin-top: 25px;
+            }
+            .t52{
+                position: relative;
+                width:30px;
+                height: 30px;
+                top:60px;
+                left:20px;
+
+            }
+            .t51{
+                position: relative;
+                left:25px;
+                top:50px;
+            }
+            .t53{
+                position: relative;
+                left:5px;
+                top:55px;
+                color: white;
+                background-color: blue;
+            }
+            .vr2{
+                border: 1px solid blue; 
+                height: 50px;
+                position: relative;
+                top: 45px;
+            }
+            .t30 hr{
+                position: relative;
+                top: 20px;
+                left: 5px;
+                width: 95%;
+            }
+            .t30 img{
+                position: relative;
+                top: 15px;
+                left: 540px;
+            }
+            .t54{
+               
+                background-color: blue;
+                
+            }
+            .tt51, .tt52, .tt53,.tt54{
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .tt51, .tt52, .tt53{
+                border-right: 2px solid black;
+                border-top:2px solid black ;
+            }
+            .tt54 button{
+                width: 100%;
+                height: 5.5vh;
+                background-color: blue;
+                color: white;
+            }
+            
+        </style>
+    </head>
+    <body>
+       <div class="main">
+        <nav>
+            <div><i class="x fa-brands fa-linkedin-in"></i></div>
+            <div class="sub1"><i class="y fa-solid fa-magnifying-glass"></i><input type="text" value="search"></div>
+            <div class="sub2"><i class="fa-solid fa-house"></i><div>Home</div></div>
+            <div class="sub2"><img src="network.png"><div>My Network</div></div>
+            <div class="sub2"><i class="fa-solid fa-bag-shopping"></i><div>jobs</div></div>
+            <div class="sub2"><i class="fa-solid fa-message"></i><div>Messaging</div></div>
+            <div class="sub2"><i class="fa-sharp fa-solid fa-bell"></i><div>Notifications</div></div>
+            <div class="sub3"><img src="https://media.istockphoto.com/id/1303206558/photo/headshot-portrait-of-smiling-businessman-talk-on-video-call.jpg?s=612x612&w=0&k=20&c=hMJhVHKeTIznZgOKhtlPQEdZqb0lJ5Nekz1A9f8sPV8="></div>
+        </nav>
+       </div>
+
+       <div class="main2">
+        <div class="r1">
+            <img src="cover-pic.png">
+            <div>
+                <div class="rimg"><img src="https://media.istockphoto.com/id/1303206558/photo/headshot-portrait-of-smiling-businessman-talk-on-video-call.jpg?s=612x612&w=0&k=20&c=hMJhVHKeTIznZgOKhtlPQEdZqb0lJ5Nekz1A9f8sPV8="></div>
+            </div>
+            <div class="bi1"><h2 class="r11">K.V.BHANU PRADEEP</h2></div>
+            <div class="bi1"><h3 class="r12">Fullstock Triner in Vector India</h3></div>
+            <div class="bi1"><p class="bb">Your Profile Views<span>2323</span></p></div>
+            <div class="bi1"><p class="bb">Your Post Views<span>5234</span></p></div>
+            <div class="bi1"><p class="bb"> your connections<span>5545</span></p></div>
+            <hr>
+        </div>
+        <div class="main3">
+            <div class="m31"><img src="items.png"></div>
+            <p class="m32">My items</p>
+            <div class="vr"></div>
+            <div class="m33"><img src="premium.png"></div>
+            <p class="m34">Try Premium</p>
+        </div>
+       </div>
+       <div class="main4">
+        <h3>Recent</h3>
+        <div class="m41"><img src="recent.png"><span><div>Web Devolopment</div></span></div>
+        <div class="m41"><img src="recent.png"><span><div>User interface</div></span></div>
+        <div class="m41"><img src="recent.png"><span><div>Online learning</div></span></div>
+        <div class="m41"><img src="recent.png"><span><div>Learn Online</div></span></div>
+        <div class="m41"><img src="recent.png"><span><div>Learn Online</div></span></div>
+        <div class="m41"><img src="recent.png"><span><div>Code Better</div></span></div>
+        <div class="m41"><img src="recent.png"><span><div>Group Learning</div></span></div>
+       <h3>Groups</h3>
+       <div class="m41"><img src="group.png"><span><div>Web Devolopment</div></span></div>
+       <div class="m41"><img src="group.png"><span><div>HTML&CSS</div></span></div>
+       <div class="m41"><img src="group.png"><span><div>React</div></span></div>
+       <div class="m41"><img src="group.png"><span><div>Note</div></span></div>
+       <div class="m41"><img src="group.png"><span><div>Python</div></span></div>
+       <div class="m41"><img src="group.png"><span><div>Java</div></span></div>
+       <div class="m41"><img src="group.png"><span><div>Node</div></span></div>
+       <h3>Hasting</h3>
+       <div class="m41"><img src="hashtag.png"><span><div>Web Devolopment</div></span></div>
+       <div class="m41"><img src="hashtag.png"><span><div>User interface</div></span></div>
+       <div class="m41"><img src="hashtag.png"><span><div>Online Devolopment</div></span></div>
+       <hr>
+       <div class="m42">Discover More</div>
+      </div>
+      <div class="main5">
+      <div class="m51"><img src="https://media.istockphoto.com/id/1303206558/photo/headshot-portrait-of-smiling-businessman-talk-on-video-call.jpg?s=612x612&w=0&k=20&c=hMJhVHKeTIznZgOKhtlPQEdZqb0lJ5Nekz1A9f8sPV8=">
+        <p>Write a Post</p>
+        </div>
+        <!-- <div><hr class="t20"></div> -->
+        <div class="t50">
+            <div class="tt51"><img  src="photo.png">photo</div>
+            <!-- <div class="vr2"></div> -->
+            <div class="tt52"><img src="video.png">video</div>
+            <!-- <div class="vr2"></div> -->
+            <div class="tt53" ><img src="event.png">event</div>
+            <!-- <div class="vr2"></div> -->
+            <div  class="tt54"><button>post</button></div>
+        </div>
+        
+        <div class="t30"><hr><img src="down-arrow.png"></div>
+    </div>
+    <div class="main6">
+        <div class="sub6"><div>Trending News</div><span><img src="more.png"></span></div>
+        <div class="sub62">High demand for skilled manpower<br/>1 day ago 21,232 readers</div>
+        <div class="sub63">High demand for programmers<br/>4 day ago 23,343 readers</div>
+        <div class="sub64">High demand for JS<br/>8 day ago 31,232 readers</div>
+        <div class="sub65">high demand for MERN<br/>12 day ago 33,232 readers</div>
+        <div class="sub66">Python is most skilled language<br/>15 day ago 37,232 readers</div>
+        <div class="sub67">Read more</div>
+    </div>
+    <div class="main7">
+        <div class="sub71">AD...</div>
+        <div class="sub72">Master the 5 principles of the web design</div>
+        <div class="sub73"><img src="https://media.istockphoto.com/id/1303206558/photo/headshot-portrait-of-smiling-businessman-talk-on-video-call.jpg?s=612x612&w=0&k=20&c=hMJhVHKeTIznZgOKhtlPQEdZqb0lJ5Nekz1A9f8sPV8="></div>
+        <div class="sub74"><img src="mi-logo.png"></div>
+        <div class="sub7"><div class="sub75">Brand and demand in xiaomi</div><input type="text" value="Learn" placeholder="learn more"></div>
+    </div>
+    <div class="sub76">About Accessability help control privacy<br/></div><div class="sub77">Policy adverticing get the App more</div>
+    <div><i class="z fa-brands fa-linkedin-in"></i><div class="sub78">Like me @ 2022 All right reverse</div></div>
+    </body>
+</html>
