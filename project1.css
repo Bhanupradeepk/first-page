@@ -5,12 +5,16 @@ body{
     width: 100%;
     background-color: beige;
 }
+.pg1{
+    width: 100%;
+    height: 100vh;
+}
 .navbar{
     width: 100%;
     height: 12vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(27, 207, 207);
     position: relative;
 }
@@ -51,8 +55,6 @@ body{
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    /*bottom: 0;
-    left: 0;*/
     background-color: deeppink;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
@@ -66,11 +68,9 @@ body{
     width: 15%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     background-color: darkgreen;
-    position: relative;
-    right: -2%;
+    text-align: center;
 }
 .menu2:hover{
     background-color: black;
@@ -87,7 +87,7 @@ body{
 }
 .dotcon{
     position: absolute;
-    width:100%;
+    width:80%;
     bottom: 10px;
     left: 10%;
     justify-content: center;
@@ -104,16 +104,17 @@ body{
    }
 .pg2{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
+    position: relative;
+    top: 5vh;
 }
 .pg20{
+    height: 10vh;
     width: 100%;
-    height: 20vh;
     font-size: 30px;
     color: red;
-    position: relative;
-    top: 8%;
-    left: 37%;
+    text-align: center;
+    top: 20px;
 }
 .side{
     width: 30%;
@@ -123,10 +124,10 @@ body{
     background-color: rgb(17, 19, 16);
     flex-direction: row;
     position: relative;
-    left: 20%;
+    left: 50%;
     display: none;
 }
-.pg20:hover .side{
+.outside:hover .side{
     display: block;
 }
 .pg21{
@@ -141,18 +142,24 @@ body{
     color: green;
     font-size: 20px;
 }
+.pg22{
+    flex-basis: 40%;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+}
 .pg22 img{
     width: 30%;
     height: 40vh;
     position: relative;
-    top: 10px;
-    left: 25px;
+    top: 15vh;
+    
 }
 .pg23{
     width: 75%;
     height: 100vh;
     position: relative;
-    left: 30%;
+    text-align: center;
 }
 .pg24{
     font-size: 25px;
@@ -160,8 +167,7 @@ body{
     font-weight: 900;
     color :deeppink;
     position: relative;
-    left: 25px;
-    bottom: 250px;
+    text-align: center;
 }
 .pg25{
     font-size: 30px;
@@ -169,14 +175,14 @@ body{
     font-weight: 900;
     color :deeppink;
     position: relative;
-    left: 100px;
-    bottom: 250px;
+    text-align: center;
 }
 .pg26{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     color: blueviolet;
     position: relative;
+    text-align: center;
     bottom: 235px;
 }
 .pg2 button{
@@ -189,32 +195,50 @@ body{
     border-color: deeppink;
     position: relative;
     bottom: 200px;
-    left: 120px;
+    left: 300px;
+}
+.outside2{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+.pg3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .pg31{
-    width: 100%;
-    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.pg31{
+    flex-shrink: 20%;
+}
+.pg32{
+    flex-basis: 80%;
 }
 .pg31 img{
     width: 120px;
     height: 120px;
-    position: relative;
-    top: 5vh;
+    flex-basis: 20%;
+   
 }
 .pg311{
     font-size: 35px;
     color: green;
-    position: relative;
-    left: 18%;
-    top: -10vh;
+    flex-basis: 60%;
+    text-align: center;
+    
 }
 .pg312 img{
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    position: relative;
-    left: 80%;
-    top: -25vh;
+    flex-basis: 20%;
 }
 .pg32{
     width: 100%;
@@ -222,58 +246,58 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
-    gap: 3px;
     position: relative;
     top: 5vh;
-    left: 15px;
 }
 .pg32 img{
-    width: 120px;
-    height: 150px;
+    width: 85%;
+    height: 30vh;
 }
 .pg32 h4{
     position: relative;
     top: 10px;
-
 }
 .pg4{
     width: 100%;
-    height: 92vh;
+    height: 100vh;
+    display: flex;
+}
+.pg40{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10vh;
 }
 .pg41 img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 10px solid orangered;
-    position: relative;
-    left: 8%;
-    top: 10vh
 }
 .pg42{
     font-style: italic;
     color: forestgreen;
     font-size: 20px;
     font-weight: 600;
-    position: relative;
-    top:12vh;
-    left: 4%;
 }
 li{
-    position: relative;
-    top:12vh;
-    left: 3%;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
     color: purple;
     line-height: 35px;
 }
-.pg43 img{
-    width: 65%;
-    height: 70vh;
+.pg43{
+    flex-basis: 65%;
     position: relative;
-    left: 32%;
-    bottom: 57vh;
+    top: 10vh;
+    display: flex;
+}
+.pg43 img{
+    width: 60%;
+    height: 50vh;
 }
 .pg5{
     width: 100%;
@@ -293,7 +317,7 @@ li{
    }
 .pg52{
     background-color: rgb(13, 124, 115);
-     width: 80%;
+    width: 80%;
     height: 65vh;
     border-radius: 25%;
 
@@ -304,14 +328,14 @@ li{
 .pg51 div{
     font-size: 20px;
     position: relative;
-    top: 5vh;
-    left: 15%;
+    top: 25px;
+    text-align: center;
 }
 .pg52 div{
     font-size: 20px;
     position: relative;
-    top: 10vh;
-    left: 20%;
+    bottom: -40px;
+    text-align: center;
 }
 .pg51 img{
     width: 50%;
@@ -329,38 +353,43 @@ li{
     top: 5vh;
     left: 25%;
 }
-.pg6 img{
-    height: 87vh;
+.combind{
     width: 100%;
+    height: 70vh;
+    display: flex;
 }
-.pg6 button{
-    position: relative;
-    top: -45vh;
-    left: 35%;
-    height: 10vh;
+.pg6{
+    height: 70vh;
+    width: 50%;
+    background-image: url("the-eatery.jpg");
+    background-size: cover;
+}
+.pg6 a{
     font-size: 25px;
     background-color: chartreuse;
     border: 10px solid rgb(184, 46, 184);
     color: white;
+    text-align: center;
 }
-.pg7 img{
+.pg7{
     height: 70vh;
-    width: 100%;
+    width: 50%;
+    background-image: url("order food.jpg");
+    background-size: cover;
 }
 .pg7 a{
-    position: relative;
-    top: -35vh;
-    left: 40%;
-    font-size: 25px;
     background-color: chartreuse;
     border: 10px solid rgb(184, 46, 184);
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 .pg8{
     display: flex;
     width: 100%;
     height: 54.6vh;
+    position: relative;
+    top: 5vh;
 }
 .pg81{
     background-color: yellow;
@@ -399,7 +428,7 @@ li{
 }
 .pg9 h1{
     position: relative;
-    top: 5vh;
+    top: 10vh;
     text-align: center;
     color: darkgreen;
 }
@@ -447,7 +476,7 @@ li{
     height: 55vh;
     background-color: lightcoral;
     position: relative;
-    top: 10vh;
+    top: 15vh;
 }
 .pg100{
     width: 100%;
