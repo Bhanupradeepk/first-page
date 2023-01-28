@@ -5,6 +5,9 @@
             *{
                 margin: 0px;
             }
+            body{
+                background-color: blueviolet;
+            }
             .pg1{
                 background-image: url("page6bg.jpg");
                 width: 100%;
@@ -16,26 +19,65 @@
                 position: absolute;
                 top: 0vh;
             }
+            .pg13{
+                color: blue;
+                font-size: 25px;
+                position: relative;
+                text-align: center;
+                top: 220px;
+            }
             .pg1 h1{
                 color: black;
                 position: relative;
                 text-align: center;
-                top: 50px;
+                font-size: 40px;
+                top: 200px;
             }
-            .pg2{
-                background-color: chartreuse;
-                width: 100%;
-                height: 100vh;
-                position: relative;
-                top: 2vh;
+            .pg2 h2{
+                text-align: center;
+                background-color: blueviolet;
             }
             .pg21{
+                position: relative;
+                top: 20px;
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(183, 240, 127);
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                
+            }
+            .pg211{
+                display: flex;
+                flex-direction: column;
+                align-content: space-around;
+                justify-content: space-around;
+            }
+            .pg212{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                position: relative;
-                top: 10vh;
+                border-left: 2px solid brown;
+                color: deeppink;
             }
+            .pg212:hover{
+                font-size: 20px;
+                color: white;
+            }
+            .pg213:hover{
+                font-size: 30px;
+                color: white;
+            }
+            .pg213{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                border-left: 2px solid brown;
+                color: rgb(12, 54, 7);
+                font-size: 25px;
+
+            }
+            
             .pg2 h2{
                 font-style: italic;
                 color: coral;
@@ -49,14 +91,19 @@
             }
             .pg22 span{
                 position: relative;
-                left: 2%;
+                left: 10%;
+            }
+            .pg3{
+                width: 100%;
+                height: 100vh;
+                background-color: blueviolet;
             }
             .pg3{
     width: 100%;
     height: 55vh;
     background-color: rgb(59, 9, 53);
     position: relative;
-    top: 5vh;
+    top: 30vh;
 }
 .pg30{
     width: 100%;
@@ -105,7 +152,6 @@
     padding-top: 1vh;
     padding-left: 25%;
     color: rgb(0, 140, 255);
-    
 }
 .c:hover{
     transform: rotate(360deg);
@@ -154,7 +200,7 @@
     flex-direction: row;
     justify-content: space-around;
     position: relative;
-    top: 5vh;
+    top: 2vh;
     color: white;
 }
 .pg33:hover div{
@@ -164,89 +210,134 @@
     width: 250px;
     height: 25px;
 }
+.pg4{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+}
+.pg41{
+    width: 40%;
+    height: 50vh;
+    background:linear-gradient(rgba(221, 236, 8, 0.7),rgba(124, 8, 80, 0.7),rgba(3, 61, 23, 0.7),rgba(31, 85, 167, 0.7));
+    position: relative;
+    top: 40vh;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.pg41 button{
+    width: 40%;
+    height: 5vh;
+    background-color: darkgreen;
+    border-radius: 10%;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+}
+label{
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+}
+input{
+    width: 40%;
+    height: 5vh;
+    background-color: darkgreen;
+    border-radius: 5%;
+    font-size: 20px;
+    font-style: italic;
+}
+.pg42{
+    font-style: italic;
+    color: deeppink;
+    font-size: 40px;
+}
         </style>
     </head>
     <body>
         <div class="pg1">
             <div class="pg11"></div>
             <h1>WELCOME TO VEGGIEGRILLS</h1>
+            <div class="pg13">Our provides Restaurent 100% quality&teasty food</div>
             <div class="pg12"><img src="orderfoodimg.png"></div>
         </div>
-        <div class="pg2">
-            <h2>MENU ITEMS</h2>
-            <div class="pg21">
-                <div>
-                    <div class="pg22">Item Name<span>Cost</span></div>
-                </div>
-                <div>
-                    <div class="pg22">Item Name<span>Cost</span></div>
-                </div>
-                <div>
-                    <div class="pg22">Item Name<span>Cost</span></div>
-                </div>
-                <div>
-                    <div class="pg22">Item Name<span>Cost</span></div>
-                </div>
-                <div>
-                    <div class="pg22">Item Name<span>Cost</span></div>
-                </div>
+            <div class="pg2"><h2>MENU ITEMS</h2></div>
+        <div class="pg21">
+            <div class="pg211">
+                <div class="pg213"><div>ITEMS</div><div>COST</div></div>
+                <div class="pg212"><div>Lehsuni Methi</div><div>RS.400</div></div>
+                <div class="pg212"><div>Stuffed Capsicum</div><div>RS.600</div></div>
+                <div class="pg212"><div>Lehsuni Methi</div><div>RS.250</div></div>
+                <div class="pg212"><div>Aloo Mattar</div><div>RS.800</div></div>
+                <div class="pg212"><div>Veg Pulao</div><div>RS.120</div></div>
+                <div class="pg212"><div>Veg Raita</div><div>RS.100</div></div>
+                <div class="pg212"><div>Dal Makhani</div><div>RS.200</div></div>
+                <div class="pg212"><div>Methi Chaman</div><div>RS.190</div></div>
+                <div class="pg212"><div>Paneer Chole Panjabi</div><div>RS.180</div></div>
+                <div class="pg212"><div>Mushroom Masala	</div><div>RS.240</div></div>
+            </div>
+            <div class="pg211">
+                <div class="pg213"><div>ITEMS</div><div>COST</div></div>
+                <div class="pg212"><div>Butter Roti	</div><div>RS.100</div></div>
+                <div class="pg212"><div>Paratha	</div><div>RS.70</div></div>
+                <div class="pg212"><div>Kulcha</div><div>RS.320</div></div>
+                <div class="pg212"><div>Missi Roti</div><div>RS.600</div></div>
+                <div class="pg212"><div>Chilli Tomato Pizza	</div><div>RS.130</div></div>
+                <div class="pg212"><div>Cheese Pizza</div><div>RS.200</div></div>
+                <div class="pg212"><div>Paneer Bhurji Pizza	</div><div>RS.360</div></div>
+                <div class="pg212"><div>Lehsuni Methi</div><div>RS.240</div></div>
+                <div class="pg212"><div>Mango Mastani</div><div>RS.60</div></div>
+                <div class="pg212"><div>Jelly Ice Cream	</div><div>RS.290</div></div>
+            </div>
+            <div class="pg211">
+                <div class="pg213"><div>ITEMS</div><div>COST</div></div>
+                <div class="pg212"><div>Malai Kulfi	</div><div>RS.420</div></div>
+                <div class="pg212"><div>Fruit Chaat	</div><div>RS.300</div></div>
+                <div class="pg212"><div>Stuffed Capsicum</div><div>RS.360</div></div>
+                <div class="pg212"><div>Sitafal</div><div>RS.280</div></div>
+                <div class="pg212"><div>Beverage Combo</div><div>RS.160</div></div>
+                <div class="pg212"><div>Royal Falooda</div><div>RS.290</div></div>
+                <div class="pg212"><div>Chocolate Mastani</div><div>RS.240</div></div>
+                <div class="pg212"><div>Butterscotch Mastani</div><div>RS.290</div></div>
+                <div class="pg212"><div>Jelly Ice Cream	</div><div>RS.200</div></div>
+                <div class="pg212"><div>Garlic Naan	</div><div>RS.290</div></div>
+            </div>
+            <div class="pg211">
+                <div class="pg213"><div>ITEMS</div><div>COST</div></div>
+                <div class="pg212"><div>Vanilla Ice Cream</div><div>RS.140</div></div>
+                <div class="pg212"><div>Lehsuni Methi</div><div>RS.280</div></div>
+                <div class="pg212"><div>Dum Aloo Kashmiri</div><div>RS.200</div></div>
+                <div class="pg212"><div>Hari Bhari Tikki</div><div>RS.420</div></div>
+                <div class="pg212"><div>Kesar Pista	</div><div>RS.190</div></div>
+                <div class="pg212"><div>Jelly Ice Cream	</div><div>RS.160</div></div>
+                <div class="pg212"><div>Vanilla Ice Cream</div><div>RS.160</div></div>
+                <div class="pg212"><div>Chocolate Ice Cream	</div><div>RS.150</div></div>
+                <div class="pg212"><div>Stuffed Capsicum</div><div>RS.300</div></div>
+                <div class="pg212"><div>Cheese Makhani</div><div>RS.200</div></div>
             </div>
         </div>
-            <div class="pg22">
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
-                <div><div><span></span></div></div>
+        <div class="pg4">
+            <div class="pg41">
+                <label>Enter Food Item Name:
+                    <input type="Text" placeholder=""/>
+                </label></br>
+                <label>Order Time:
+                    <input type="date"/>
+                </label></br>
+                <label>Your Ph no:
+                    <input type="text" placeholer="Enter ph no"/>
+                </label></br>
+                <label>To Pay Money:
+                <button>online payment</button>
+              
+            </label></br>
+            <div>After recieving pay money is also Available</div>
+            <div class="pg42">THANK YOU</div>
             </div>
-        </div> 
-        <div class="pg3">
+        </div>
+        <div class="loster">
+         <div class="pg3">
             <div class="pg30">
                 <h2>FOLLOW US</h2>
                 <div class="pg31"><div><i class="a fa-brands fa-instagram"></i></div></div>
@@ -301,5 +392,6 @@
                 <div>Copyright @ veggiegrill. All Rights Reserved.</div>
             </div>
         </div>
+       </div>
     </body>
 </html>
